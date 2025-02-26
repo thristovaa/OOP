@@ -4,11 +4,10 @@ import java.util.Arrays;
 public class Employee {
     private String name;
     private long employeeNumber;
-
-    private ArrayList<Work> works;
-
     private long totalWorkHours;
     private long totalWorkMinutes;
+
+    private ArrayList<Work> works;
 
     public String getName() {
         return name;

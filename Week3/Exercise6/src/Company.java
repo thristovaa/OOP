@@ -11,6 +11,13 @@ public class Company {
 
     public Company(String name) {
         this.name = name;
+        this.employees = loadEmployeeData();
+    }
+
+    private ArrayList<Employee> loadEmployeeData() {
+        ArrayList<Employee> result = new ArrayList<>();
+
+        return result;
     }
 
     public String getName() {
