@@ -1,7 +1,4 @@
-import java.time.Duration;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class Main {
@@ -24,6 +21,11 @@ public class Main {
 
         Duration waitingTime = Duration.between(now, momentOfMyBirthday);
 
+        //been alive for
+        LocalDate bornOn = LocalDate.of(2005, 12, 22);
+
+        Period daysAlive = Period.between(bornOn, today);
+
         //output
         System.out.println(now);
         System.out.println(getProperDate(now));
@@ -34,6 +36,7 @@ public class Main {
                 waitingTime.toMinutesPart(),
                 waitingTime.toSecondsPart()
         );
+        System.out.println("You have been alive for " + daysAlive.getDays() + " days.");
     }
 
     public static String getProperDate(LocalDateTime now){
