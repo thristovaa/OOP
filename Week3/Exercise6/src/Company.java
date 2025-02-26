@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Company {
@@ -6,6 +8,10 @@ public class Company {
     private ArrayList<Employee> employees;
 
     private long totalWorkMinutes;
+
+    public Company(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
@@ -17,5 +23,9 @@ public class Company {
 
     public long getTotalWorkMinutes() {
         return totalWorkMinutes;
+    }
+
+    public void registerWork(int employee, String task, LocalDateTime start, LocalDateTime end) {
+
     }
 }

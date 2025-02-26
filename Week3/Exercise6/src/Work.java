@@ -6,6 +6,12 @@ public class Work {
     private LocalDate endDate;
     private long minutes;
 
+    public Work(String task, LocalDate startDate, LocalDate endDate){
+        this.task = task;
+        this.startDate = startDate;
+        this.endDate = endDate;
+    }
+
     public String getTask() {
         return task;
     }

@@ -29,4 +29,10 @@ public class Employee {
     public ArrayList<Work> getWork() {
         return works;
     }
+
+    public String[] getDifferentWorkTitles() {
+        String[] result = new String[0];
+
+        return result;
+    }
 }
