@@ -9,4 +9,21 @@ public class House extends Building{
         this.hasGarage = hasGarage;
         this.price = price;
     }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public boolean getGarage() {
+        return hasGarage;
+    }
+
+    @Override
+    public String toString() {
+        return "House of " + this.owner + " " + (this.hasGarage ? "with" : "without") + " garage, price: EUR " + this.price + ", Address: " + getAddress() + " , Zip code: " + getZipCode() + ", City: " + getCity() + ", Area: " + getArea() + " m2\n";
+    }
 }

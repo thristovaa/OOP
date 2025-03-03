@@ -10,4 +10,20 @@ public class Building {
         this.city = city;
         this.area = area;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public int getArea() {
+        return area;
+    }
 }
